@@ -1,0 +1,14 @@
+PODS:
+  - HYGCDTimer (0.1.0)
+
+DEPENDENCIES:
+  - HYGCDTimer (from `../`)
+
+EXTERNAL SOURCES:
+  HYGCDTimer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HYGCDTimer: 314b4857ce87459d50f76e5a596a903ccf563d04
+
+COCOAPODS: 0.35.0

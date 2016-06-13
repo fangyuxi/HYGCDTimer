@@ -7,6 +7,7 @@
 //
 
 #import "HYViewController.h"
+#import "HYGCDTimer.h"
 
 @interface HYViewController ()
 
@@ -18,6 +19,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    HYGCDTimer *timer = [[HYGCDTimer alloc] initWithTimeInterval:2 queue:nil repeats:YES action:^{
+        
+        NSLog(@"fangyuxi");
+        
+    } userInfo:nil];
+    
+    [timer fire];
+    
 }
 
 - (void)didReceiveMemoryWarning
