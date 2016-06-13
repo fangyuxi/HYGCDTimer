@@ -24,9 +24,14 @@
         
         NSLog(@"fangyuxi");
         
-    } userInfo:nil];
+    } tolerance:0.1 userInfo:nil];
     
     [timer fire];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        [timer invalidate];
+    });
     
 }
 

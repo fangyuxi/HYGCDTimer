@@ -51,12 +51,12 @@ NS_ASSUME_NONNULL_BEGIN
                               userInfo:(id __nullable)userInfo NS_DESIGNATED_INITIALIZER;
 
 /**
- *  开始
+ *  开始 重复调用 结果未知
  */
 - (void)fire;
 
 /**
- *  取消
+ *  取消 重复调用 结果未知
  */
 - (void)invalidate;
 
