@@ -17,7 +17,6 @@
     self.window = window;
     
     HYViewController *controller = [[HYViewController alloc] init];
-    controller.title = @"HYGCDTimer Demo";
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
     window.rootViewController = nav;
     

@@ -9,5 +9,6 @@
 @import UIKit;
 
 @interface HYViewController : UIViewController
-
+@property (nonatomic, strong) NSMutableArray *array;
+@property (nonatomic, strong) NSMutableDictionary *dic;
 @end
